@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Money Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Money Manager App</h1>
+
+<div class="form">
+    <input type="number" id="amount" placeholder="Amount">
+    <input type="date" id="date">
+    
+    <select id="type">
+        <option value="">Select Type</option>
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+    </select>
+
+    <input type="text" id="category" placeholder="Category">
+    <input type="text" id="desc" placeholder="Description">
+
+    <button onclick="addTransaction()">Add</button>
+</div>
+
+<h2>Summary</h2>
+<p id="income">Income: 0</p>
+<p id="expense">Expense: 0</p>
+<p id="balance">Balance: 0</p>
+
+<h2>Transactions</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="list"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
